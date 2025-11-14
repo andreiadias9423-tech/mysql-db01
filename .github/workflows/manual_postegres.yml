@@ -31,11 +31,11 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
     - name: Testar ligacao
-              env:
+      env:
           PGHOST: ${{ inputs.name }}
           PGPORT: 5422
           PGDATABASE: postegres
           PGUSER: ${{ secrets.USER }}
           PGPASSWORD: ${{ secrets.PASS }}
-        run: |
+      run: |
           psql -c "SELECT version();"
