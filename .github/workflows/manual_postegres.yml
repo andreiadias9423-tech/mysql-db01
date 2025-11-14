@@ -34,7 +34,7 @@ jobs:
       env:
           PGHOST: ${{ inputs.name }}
           PGPORT: 5432
-          PGDATABASE: postegres
+          PGDATABASE: postgres
           PGUSER: ${{ secrets.USER }}
           PGPASSWORD: ${{ secrets.PASS }}
       run: |
