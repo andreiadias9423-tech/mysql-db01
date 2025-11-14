@@ -33,7 +33,7 @@ jobs:
     - name: Testar ligacao
       env:
           PGHOST: ${{ inputs.name }}
-          PGPORT: 5422
+          PGPORT: 5432
           PGDATABASE: postegres
           PGUSER: ${{ secrets.USER }}
           PGPASSWORD: ${{ secrets.PASS }}
